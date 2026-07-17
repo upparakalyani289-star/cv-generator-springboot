@@ -1,16 +1,38 @@
-# CV Generator
+# CV Generator - Spring Boot
 
-## Project Description
+## Project Overview
 
-A Spring Boot CRUD application to manage resume information using Spring Boot, Spring Data JPA, and MySQL. This project provides REST APIs to create, read, update, and delete resume details.
+CV Generator is a Spring Boot based REST API application used to create, retrieve, update, and delete resume information.
+
+This project provides CRUD operations for managing resume details.
+
+---
 
 ## Technologies Used
 
-- Java
+- Java 21
 - Spring Boot
+- Spring Web
 - Spring Data JPA
 - MySQL
 - Maven
+- IntelliJ IDEA
+- Git & GitHub
+
+---
+
+## Project Structure
+
+```
+controller  - Handles REST API requests
+service     - Contains business logic
+repository  - Database operations
+entity      - Database models
+dto         - Data transfer objects
+exception   - Global exception handling
+```
+
+---
 
 ## Features
 
@@ -19,6 +41,9 @@ A Spring Boot CRUD application to manage resume information using Spring Boot, S
 - Get Resume By ID
 - Update Resume
 - Delete Resume
+- Exception Handling
+
+---
 
 ## API Endpoints
 
@@ -52,36 +77,56 @@ PUT /api/resumes/{id}
 DELETE /api/resumes/{id}
 ```
 
-## How to Run
-
-1. Clone the repository.
-2. Configure MySQL database.
-3. Update `application.properties`.
-4. Run `CvGeneratorApplication.java`.
-5. Test APIs using Postman.
+---
 
 ## Screenshots
 
-### POST API
+### Create Resume API
 
-![POST API](screenshots/create.png)
+![Create Resume](screenshots/Screenshot 2026-07-17 134435.png)
 
-### GET ALL API
 
-![GET ALL API](screenshots/get-all.png)
+### Get All Resume API
 
-### GET BY ID API
+![Get All Resume](screenshots/Screenshot 2026-07-17 135132.png)
 
-![GET BY ID API](screenshots/get-by-id.png)
 
-### PUT API
+### Get Resume By ID API
 
-![PUT API](screenshots/update.png)
+![Get By ID](screenshots/Screenshot 2026-07-17 135613.png)
 
-### DELETE API
 
-![DELETE API](screenshots/delete.png)
+### Update Resume API
 
-### Spring Boot Application Running
+![Update Resume](screenshots/Screenshot 2026-07-17 135805.png)
 
-![Application Running](screenshots/application-running.png)
+
+### Delete Resume API
+
+![Delete Resume](screenshots/Screenshot 2026-07-17 135954.png)
+
+---
+
+## How to Run
+
+1. Clone the repository
+
+```
+git clone https://github.com/upparakalyani289-star/cv-generator-springboot.git
+```
+
+2. Open project in IntelliJ IDEA
+
+3. Configure MySQL database in:
+
+```
+application.properties
+```
+
+4. Run Spring Boot application
+
+---
+
+## Author
+
+Kalyani
